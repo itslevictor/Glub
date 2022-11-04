@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1053815351252",
+    "project_id": "glub-v1",
+    "storage_bucket": "glub-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053815351252:android:986c0625692d3de0a0d841",
+        "android_client_info": {
+          "package_name": "com.example.glub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053815351252-pho3s7moirlc0lkqkt8fpifpgl0b37kp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm7cA_1eQLreuZjPrbd9hMq5lO2yJMDCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053815351252-pho3s7moirlc0lkqkt8fpifpgl0b37kp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
