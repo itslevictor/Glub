@@ -3,20 +3,18 @@ package com.example.glub
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.glub.databinding.ActivityLoginBinding
 import com.example.glub.databinding.ActivityMainBinding
+import com.example.glub.databinding.ActivityNavegarPerfilBinding
 
-class Login : AppCompatActivity() {
-
-    private lateinit var binding: ActivityLoginBinding
+class navegarPerfil : AppCompatActivity() {
+    private lateinit var binding: ActivityNavegarPerfilBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivityNavegarPerfilBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btMain.setOnClickListener{
+        binding.btNavegarPerfil.setOnClickListener {
             val navegarMain = Intent(this, MainActivity::class.java)
             startActivity(navegarMain)
         }
     }
-
 }

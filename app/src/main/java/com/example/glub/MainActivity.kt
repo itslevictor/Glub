@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.glub.databinding.ActivityMainBinding
+import com.example.glub.databinding.ActivityNavegarPerfilBinding
 
     class MainActivity : AppCompatActivity() {
     private lateinit var binding:ActivityMainBinding
@@ -11,9 +12,13 @@ import com.example.glub.databinding.ActivityMainBinding
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btLogin.setOnClickListener{
+        this.binding.btLogin.setOnClickListener {
             val navegarLogin = Intent(this, Login::class.java)
             startActivity(navegarLogin)
+        }
+        this.binding.btPerfil.setOnClickListener {
+            val navegarPerfil = Intent(this, navegarPerfil::class.java)
+            startActivity(navegarPerfil)
         }
     }
 }
