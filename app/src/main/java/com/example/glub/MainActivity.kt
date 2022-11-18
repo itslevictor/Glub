@@ -32,5 +32,13 @@ import com.example.glub.databinding.ActivityNavegarPerfilBinding
             val navegarPerfil = Intent(this, navegarPerfil::class.java)
             startActivity(navegarPerfil)
         }
+        this.binding.btCarrinho.setOnClickListener {
+            val navegarPerfil = Intent(this, navegarPerfil::class.java)
+            startActivity(navegarPerfil)
+        }
+        this.binding.btMapa.setOnClickListener {
+            val navegarPerfil = Intent(this, navegarPerfil::class.java)
+            startActivity(navegarPerfil)
+        }
     }
 }
