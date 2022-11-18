@@ -6,34 +6,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:gravity="bottom|center_horizontal"
     android:orientation="vertical"
     tools:context=".Login">
 
-    <ImageView
-        android:id="@+id/btPerfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:layout_marginStart="0dp"
-        android:src="@drawable/sanduiche"/>
 
-    <ImageView
-        android:id="@+id/btPedido"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:layout_marginStart="140dp"
-        android:src="@drawable/home" />
+        android:orientation="horizontal"
+        android:gravity="center">
 
-    <ImageView
-        android:id="@+id/btLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:layout_marginStart="280dp"
-        android:src="@drawable/perfil"/>
-    
+        <ImageView
+            android:id="@+id/btFornecedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="0dp"
+            android:src="@drawable/sanduiche" />
+        <ImageView
+            android:id="@+id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="220dp"
+            android:src="@drawable/perfil" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center">
+
+        <ImageView
+            android:id="@+id/btPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="0dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/btPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/fornecedor" />
+        <ImageView
+            android:id="@+id/btPedidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/pedidos"/>
+
+        <ImageView
+            android:id="@+id/btCarrinho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/carrinho"/>
+    </LinearLayout>
 
 
 </RelativeLayout>
