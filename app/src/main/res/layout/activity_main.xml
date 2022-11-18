@@ -34,11 +34,35 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginVertical="250dp"
+        >
+
+        <ImageView
+            android:id="@+id/btMapa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="0dp"
+            android:layout_marginStart="0dp"
+            android:src="@mipmap/googlemaps" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="100dp"
+        >
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom|center">
 
         <ImageView
-            android:id="@+id/btPedido"
+            android:id="@+id/btHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
