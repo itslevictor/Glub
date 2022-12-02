@@ -1,44 +1,60 @@
     package com.example.glub
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.glub.databinding.ActivityMainBinding
-import com.example.glub.databinding.ActivityNavegarPerfilBinding
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.Exclude
+import com.google.firebase.database.IgnoreExtraProperties
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
     class MainActivity : AppCompatActivity() {
     private lateinit var binding:ActivityMainBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
+    private lateinit var database: DatabaseReference
+
+        override fun onCreate(savedInstanceState: Bundle?) {
+        /*
+        // Write a message to the database
+        val database = Firebase.database
+        val myRef1 = database.getReference("1")
+        myRef1.setValue("Variavel 1!")
+        val myRef2 = database.getReference("2")
+        myRef2.setValue("Variavel 2!"*/
+        database = Firebase.database.reference
+
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         this.binding.btLogin.setOnClickListener {
-            val navegarLogin = Intent(this, Login::class.java)
-            startActivity(navegarLogin)
+            val entryActivity = Intent(this, EntryActivity::class.java)
+            startActivity(entryActivity)
         }
         this.binding.btPerfil.setOnClickListener {
-            val navegarPerfil = Intent(this, navegarPerfil::class.java)
-            startActivity(navegarPerfil)
+            val navegarActivity = Intent(this, NavegarActivity::class.java)
+            startActivity(navegarActivity)
         }
         this.binding.btFornecedor.setOnClickListener {
-            val navegarPerfil = Intent(this, navegarPerfil::class.java)
-            startActivity(navegarPerfil)
+            val navegarActivity = Intent(this, NavegarActivity::class.java)
+            startActivity(navegarActivity)
         }
         this.binding.btPedidos.setOnClickListener {
-            val navegarPerfil = Intent(this, navegarPerfil::class.java)
-            startActivity(navegarPerfil)
+            val navegarActivity = Intent(this, NavegarActivity::class.java)
+            startActivity(navegarActivity)
         }
         this.binding.btCarrinho.setOnClickListener {
-            val navegarPerfil = Intent(this, navegarPerfil::class.java)
-            startActivity(navegarPerfil)
+            val navegarActivity = Intent(this, NavegarActivity::class.java)
+            startActivity(navegarActivity)
         }
         this.binding.btCarrinho.setOnClickListener {
-            val navegarPerfil = Intent(this, navegarPerfil::class.java)
-            startActivity(navegarPerfil)
+            val navegarActivity = Intent(this, NavegarActivity::class.java)
+            startActivity(navegarActivity)
         }
         this.binding.btMapa.setOnClickListener {
-            val navegarPerfil = Intent(this, navegarPerfil::class.java)
-            startActivity(navegarPerfil)
+            val navegarActivity = Intent(this, NavegarActivity::class.java)
+            startActivity(navegarActivity)
         }
+
     }
 }

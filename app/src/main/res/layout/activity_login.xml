@@ -8,7 +8,7 @@
     android:background="@color/black"
     android:gravity="top|center_horizontal"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".EntryActivity">
 
     <Button
         android:id="@+id/btMain1"

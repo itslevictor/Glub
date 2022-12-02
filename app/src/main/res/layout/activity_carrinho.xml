@@ -6,7 +6,7 @@
     android:background="@color/purple_500"
     android:gravity="top|right"
     android:orientation="vertical"
-    tools:context=".navegarPerfil">
+    tools:context=".NavegarActivity">
 
     <Button
         android:id="@+id/btNavegarPerfil"
