@@ -9,7 +9,7 @@
 
 ### Projeto de Design da Aplicação finalizada:
 [<img height= 400 src="https://github.com/itslevictor/Glub/blob/master/Telas/tela1.png?raw=true">](https://github.com/itslevictor/Glub/blob/master/Telas/tela1.png?raw=true)
-[<img height =400 src="https://github.com/itslevictor/Glub/blob/master/Telas/tela2.png?raw=true">](https://github.com/itslevictor/Glub/blob/master/Telas/tela2.png?raw=true)
+[<img height =400 src="https://github.com/itslevictor/Glub/blob/master/Telas/tela2.png?raw=true">](https://github.com/itslevictor/Glub/blob/master/Telas/tela2.png?raw=true) [<img height =400 src="https://github.com/itslevictor/Glub/blob/master/Telas/tela3.png?raw=true">](https://github.com/itslevictor/Glub/blob/master/Telas/tela3.png?raw=true)
 
 
 
